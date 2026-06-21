@@ -6,7 +6,7 @@
     "project"
   ],
   "scripts": {
-    "build": "npm run build --workspace=project && node -e \"const fs = require('fs'); fs.cpSync('project/dist', 'dist', { recursive: true });\""
+    "build": "npm run build --workspace=project && node -e \"const fs = require('fs'); fs.cpSync('project/dist', 'public', { recursive: true });\""
   },
   "dependencies": {
     "playwright": "^1.61.0"
